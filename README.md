@@ -1,2 +1,0 @@
-# inmode
-Pagina de Inmode
