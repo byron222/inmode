@@ -165,6 +165,13 @@ remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_singl
 
 
 
+function action_woocommerce_before_variations_form(  ) { 
+    echo do_shortcode('[ct_size_guide]');
+}; 
+         
+// add the action 
+add_action( 'woocommerce_before_variations_form', 'action_woocommerce_before_variations_form', 10, 0 ); 
+
 
 // define the woocommerce_after_single_product callback 
 function action_woocommerce_after_single_product(  ) { 
